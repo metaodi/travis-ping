@@ -2,6 +2,7 @@ require 'faraday'
 require 'multi_json'
 
 module Travis
+  # @todo choose a better name?
   module Ping
     # Gets and parses JSON.
     #
@@ -11,13 +12,16 @@ module Travis
       MultiJson.load(Faraday.get(url).body)
     end
 
-    # All the documentation about what a payload looks like is inacurate. Add a
-    # custom webhook to find out what it looks like. You can create a webhook URL at
-    # http://requestb.in/.
+    # All the documentation about what a payload looks like is inaccurate. Add a
+    # custom webhook to find out what it looks like. You can create a webhook
+    # URL at http://requestb.in/.
     #
     # @param [String] owner_name a GitHub repository owner
     # @param [String] name a GitHub repository name
     # @return [Hash] a forged post-receive hook payload
+    #
+    # @note This forgery is probably way more accurate than necessary, but I
+    #   can't find the code responsible for reading the payload within Travis.
     #
     # @see How to add a webhook https://help.github.com/articles/post-receive-hooks
     # @see https://github.com/github/github-services/blob/master/lib/service/events/push_helpers.rb
@@ -51,8 +55,7 @@ module Travis
         'url'       => "https://github.com#{commit['url']}",
       }
 
-      {
-        'after'       => build['commit'],
+      { 'after'       => build['commit'],
         # @todo +before+ will just be six characters long, not 40
         'before'      => before,
         # @todo add other commits

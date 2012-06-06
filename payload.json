@@ -1,0 +1,75 @@
+{
+    "after": "d0375ecd8f572b6c90b8708226452ed83fe95d7f",
+    "before": "cdb7f030897dfd63166a7b6f7a6f3a64076c19b8",
+    "commits": [{
+        "added": [],
+        "author": {
+            "email": "james@slashpoundbang.com",
+            "name": "James McKinney",
+            "username": "jpmckinney"
+        },
+        "committer": {
+            "email": "james@slashpoundbang.com",
+            "name": "James McKinney",
+            "username": "jpmckinney"
+        },
+        "distinct": true,
+        "id": "d0375ecd8f572b6c90b8708226452ed83fe95d7f",
+        "message": "whitespace [skip ci]",
+        "modified": ["USAGE"],
+        "removed": [],
+        "timestamp": "2012-06-05T21:06:15-07:00",
+        "url": "https://github.com/opennorth/scraperwiki-api-ruby/commit/d0375ecd8f572b6c90b8708226452ed83fe95d7f"
+    }],
+    "compare": "https://github.com/opennorth/scraperwiki-api-ruby/compare/cdb7f03...d0375ec",
+    "created": false,
+    "deleted": false,
+    "forced": false,
+    "head_commit": {
+        "added": [],
+        "author": {
+            "email": "james@slashpoundbang.com",
+            "name": "James McKinney",
+            "username": "jpmckinney"
+        },
+        "committer": {
+            "email": "james@slashpoundbang.com",
+            "name": "James McKinney",
+            "username": "jpmckinney"
+        },
+        "distinct": true,
+        "id": "d0375ecd8f572b6c90b8708226452ed83fe95d7f",
+        "message": "whitespace [skip ci]",
+        "modified": ["USAGE"],
+        "removed": [],
+        "timestamp": "2012-06-05T21:06:15-07:00",
+        "url": "https://github.com/opennorth/scraperwiki-api-ruby/commit/d0375ecd8f572b6c90b8708226452ed83fe95d7f"
+    },
+    "pusher": {
+        "email": "james@slashpoundbang.com",
+        "name": "jpmckinney"
+    },
+    "ref": "refs/heads/master",
+    "repository": {
+        "created_at": "2012-05-26T10:07:55-07:00",
+        "description": "A Ruby wrapper for the ScraperWiki API",
+        "fork": false,
+        "forks": 1,
+        "has_downloads": true,
+        "has_issues": true,
+        "has_wiki": true,
+        "language": "Ruby",
+        "name": "scraperwiki-api-ruby",
+        "open_issues": 0,
+        "organization": "opennorth",
+        "owner": {
+            "email": "info@opennorth.ca",
+            "name": "opennorth"
+        },
+        "private": false,
+        "pushed_at": "2012-06-05T21:06:22-07:00",
+        "size": 380,
+        "url": "https://github.com/opennorth/scraperwiki-api-ruby",
+        "watchers": 1
+    }
+}

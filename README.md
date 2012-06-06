@@ -4,7 +4,8 @@ You can trigger a build manually as described in the [Travis CI documentation](h
 
 If you want to trigger a build programmatically, use `travis-ping` to forge a post-receive hook and trigger a build:
 
-    git clone 
+    git clone https://github.com/jpmckinney/travis-ping.git
+    cd travis-ping
     bundle
     require 'travis-ping'
     Travis::Ping.ping 'github-user', 'travis-token', 'repository-owner-name', 'repository-name'
